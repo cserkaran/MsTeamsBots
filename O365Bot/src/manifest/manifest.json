@@ -1,0 +1,69 @@
+{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v1.0/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.0",
+  "id": "3f905b97-0e36-8d87-d4d2-ca7739e86274",
+  "version": "0.0.1",
+  "packageName": "io.ngrok.7a8edd17",
+  "developer": {
+    "name": "personal",
+    "websiteUrl": "https://7a8edd17.ngrok.io",
+    "privacyUrl": "https://7a8edd17.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://7a8edd17.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "O365Bot",
+    "full": "O365Bot"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-20x20.png",
+    "color": "icon-96x96.png"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "bc264d51-2bd1-d5dc-9e57-03ce84d45c52",
+      "name": "O365Bot",
+      "contentUrl": "https://7a8edd17.ngrok.io/o365BotTab.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "622e62e2-4ec0-48f1-90b5-7364ce7f4948",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": []
+}
